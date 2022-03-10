@@ -4,6 +4,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth; /*para que o scroll entre sections seja suave*/
 }
 
 .toggle {
@@ -176,4 +177,76 @@ p {
 .sci li img:hover {
     transform: scale(1);
     opacity: 1;
+}
+
+.title {
+    width: 100%;
+    text-align: center;
+    padding-top: 40px;
+}
+
+.title h2 {
+    position: relative;
+    color: #00bcd4;
+    font-size: 1.8em;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.title p {
+    max-width: 700px;
+    display: inline-block;
+}
+
+.title h2::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -10px;
+    width: 60px;
+    height: 4px;
+    background: #000;
+}
+
+.title.white h2 {
+    color: #00bcd4;
+}
+
+.title.white p {
+    color: #fff;
+}
+
+.title.white h2::before {
+    background: #fff;
+}
+
+.about {
+    background: #000;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.about .content{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 40px;
+}
+
+.about .content .txtBx {
+    min-width: 49%;
+    width: 49%;
+}
+
+.about .content .txtBx p {
+    color: #fff;
+    text-align: justify;
+}
+
+.about .content .imgBx {
+    margin-left: 40px;
+}
+
+.about .content .imgBx img {
+    max-width: 100%;
 }

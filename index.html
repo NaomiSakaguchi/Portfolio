@@ -16,7 +16,7 @@
 
         <!--Imagem Lateral-->
         <div class="imgSidebar">
-            <img src="/images/feneko.jpg" alt="naomi">
+            <img src="/images/naomi.jpeg" alt="naomi">
         </div>
 
         <!--Conteúdo-->
@@ -40,19 +40,45 @@
         </div>
     </section>
 
-    <!--Menu Lateral (aberto)-->    
+    <!--About-->
+    <section class="about" id="about">
+        <div class="title white">
+            <h2>About Me</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="content">
+            <div class="txtBx">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum necessitatibus corporis quasi ducimus eius nemo vel nobis, facilis aperiam quos dolorem? Obcaecati vero natus ipsam quam provident quas iure explicabo.
+            Blanditiis totam nisi sequi? Iste excepturi tempore ratione, repudiandae dolore nostrum iusto possimus veritatis ex laudantium temporibus, esse reiciendis nam, impedit doloribus rerum amet incidunt minima nulla cum est modi.
+            Provident repellendus tenetur deleniti quasi aut quaerat odit! Dignissimos sint recusandae voluptatibus magnam voluptatem illo, quidem, iste saepe quos sunt repudiandae quasi. Commodi ratione, fugiat quisquam inventore similique ducimus debitis.</p>
+            </div>
+            <div class="imgBX">
+                <img src="/images/feneko.jpg" alt="naomi">
+            </div>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <div class="title">
+            <h2>Services</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+    </section>
+
+    <!--Menu Lateral (toggle/sidebar active)-->    
     <div class="sidebar">
         <ul class="menu">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Work</a></li>
-            <li><a href="#">Contact</a></li>
+            <!--#home redireciona para a seçao home. onclick="toggleMenu(); fecha o menu após clicar no link"-->
+            <li><a href="#home" onclick="toggleMenu();">Home</a></li>
+            <li><a href="#about" onclick="toggleMenu();">About</a></li>
+            <li><a href="#services" onclick="toggleMenu();">Services</a></li>
+            <li><a href="#work" onclick="toggleMenu();">Work</a></li>
+            <li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
         </ul>
     </div>
 
 
-    <!--Função para no onclick, criar o 'active' dentro do toggle (testar com F12)-->
+    <!--Função para no onclick, criar o 'active' dentro do toggle/sidebar (testar com F12)-->
     <script>
         function toggleMenu(){
             const menuToggle = document.querySelector('.toggle');
