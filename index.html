@@ -5,8 +5,61 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <!--Botão do Menu-->
+    <div class="toggle" onclick="toggleMenu();"></div>
+
+    <!--Home Section-->
+    <section class="banner" id="home">
+
+        <!--Imagem Lateral-->
+        <div class="imgSidebar">
+            <img src="/images/feneko.jpg" alt="naomi">
+        </div>
+
+        <!--Conteúdo-->
+        <div class="contentBx">
+            <h5 class="logoText">My_Portfolio</h5>
+            <div>
+                <h4><span>Hello</span>, I'm</h4>
+                <h2>Naomi Sakaguchi</h2>
+                <h4>I'm a Frontend Web Developer.</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, molestias tempora aliquid obcaecati ipsa nisi? Atque accusantium necessitatibus quam placeat quisquam repellat, illum repudiandae numquam, odio iste est, molestiae nostrum.
+                Libero voluptates rerum maiores nobis at reiciendis cumque ipsam magnam ipsa tempore voluptate.</p>
+                <a href="#" class="btn">About Me</a>
+            </div>
+            
+            <!--Social Media Links-->
+            <ul class="sci"> 
+                <li><a href="#"><img src="/images/facebook.png" alt="facebook"></a></li>
+                <li><a href="#"><img src="/images/twitter.png" alt="twitter"></a></li>
+                <li><a href="#"><img src="/images/instagram.png" alt="instagram"></a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!--Menu Lateral (aberto)-->    
+    <div class="sidebar">
+        <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Work</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+
+
+    <!--Função para no onclick, criar o 'active' dentro do toggle (testar com F12)-->
+    <script>
+        function toggleMenu(){
+            const menuToggle = document.querySelector('.toggle');
+            menuToggle.classList.toggle('active');
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.classList.toggle('active');
+        }
+    </script>
 </body>
 </html>
